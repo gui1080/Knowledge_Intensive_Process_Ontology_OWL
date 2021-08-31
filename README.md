@@ -1,1 +1,5 @@
-# Knowledge_Intensive_Process_Ontology_OWL
+# Knowledge Intensive Process Ontology em OWL
+
+Editor de ontologias usado: Protegé
+
+Editor de diagramas usado: https://app.diagrams.net/
