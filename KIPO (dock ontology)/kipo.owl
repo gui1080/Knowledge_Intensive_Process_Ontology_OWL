@@ -1,0 +1,3189 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/kipo"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/kipo">
+    <Prefix name="" IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/kipo"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.org/nemo/gufo#</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Módulo relativo a implementação da KIP Ontology (Dock Ontology).</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/nemo/gufo#ExtrinsicAspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/nemo/gufo#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#BPO::Association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action_Contribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atomic_Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communicative_Act"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Complex_Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Innovation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mental_Moment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normative_Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerceptionofCommunication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocializationduetoInformalExchange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Special_Relator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BPO::Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BPO::Data_Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BPO::Flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BPO::Message_Flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRO::Derivation_Foundational_Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRO::Foundational_Business_Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRO::Foundational_Conclusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRO::Foundational_Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRO::Foundational_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRO::Foundational_Integrity_Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRO::Foundational_Post-Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BRO::Reaction_Foundational_Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CO::COM::Communicative_Interaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CO::COM::Message"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CO::COM::Perception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CO::COM::Receiver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CO::COM::Sender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CO::COOP::Collaborative_Session"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Advantage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Alternative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Chosen_Alternative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Criterion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Disadvantage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Discarded_Alternative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Evidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Fact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Feeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Question"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Restriction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DO::Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Activity_Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Assertion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Belief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Business_Process_Rules"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Business_Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Contingency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Derivation_Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Desire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Experience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::External_Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Impact_Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Informal_Exchange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Innovation_Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Integrity_Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Knowledge_Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Makes_to_Solve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Mental_Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Message_Flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Process_Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Reaction_Rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Socialization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KIPCO::Specialty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#INVisEventProperPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#associated_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#is_connected_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#is_connected_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVcaused_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVcommunication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVconnects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVconsists_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVcreates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVinfoexchange"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVoccurs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVparticipates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVperception"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVperforms"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVpropositional_content_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVsocialization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVstimulates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#caused_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#communication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#consists_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#creates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#infoexchange"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#occurs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#participates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#perception"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#performs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#socialization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVbecomes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVbelongs_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVcontributes_to_create"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVgenerates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVhas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVis_motivated_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVmay_be_helped_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVmotivates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVprovided_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVundertakes_to_carry_out"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVused_intention"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVuses_innovation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVuses_intention"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#becomes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#belongs_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#generates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#is_motivated_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#may_be_helped_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#motivates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#provided_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#undertakes_to_carry_out"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#used_intention"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#uses_innovation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#uses_intention"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Dock"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contributes_to_create"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stimulates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#INV_resulting_event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#INVinstance_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#INVtrigger_event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#aluno_pagando_formatura"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#aluno_se_formando"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#condition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#instance_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#according_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#can_solve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#composes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#considers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#determines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#has_action"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#identifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#influences"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#makes_to_solve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#pos_state"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#proposes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#threatens"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#uses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#uses_action"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#hasAffirmation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#Frase_De_Agentes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#Enunciado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#hasAffirmation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Affirmation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DraftAft"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DraftEbb"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DraftFlood"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DraughtForward"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TimeEbb"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TimeFlood"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#VelocityCurrent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#VelocityWind"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#pergunta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A_small_boat_is_up_to_100_meters_long_and_15_meters_wide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agent_found_major_error_in_process"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agent_thinks_that_the_process_is_over"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Allow_passage_between_the_ship_and_the_pier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cancel_maneuver_and_end_process"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Communicator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Decide_maneuver_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dock_Ship"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#End_process"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Executor_agent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Get_data_from_the_pier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Get_vessel_data"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Get_vessel_movement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#It_is_possible_to_fit_2_small_boats_in_a_big_boat_slot_at_the_pier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Length_of_the_boat_is_294_meters"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maneuver_is_going_to_take_a_lot_of_time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maneuver_is_going_to_take_less_time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maximum_number_of_large_boats_moored_is_20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maximum_number_of_small_boats_moored_is_25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#No_fundamental_aspect_of_the_process_was_violated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#No_private_property_can_be_damaged_during_the_process"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Obtain_environmental_factors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pay_attention_to_the_context_of_the_process_and_decide_what_is_the_best_maneuver_possible"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perform_maneuver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pier_Data_Association"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pier_Info"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Port_side"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Proper_weather_conditions_are_needed_in_order_to_dock_properly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Set_maneuver_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Starboard_side"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Start_mooring_the_ship"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Start_the_Start_Maneuver_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Start_the_Wait_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#There_are_25_small_boats_at_the_pier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Time_mismanagement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vessel_Data_Association"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vessel_Info"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vessel_Status"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vessel_is_unable_to_dock_right_now"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vessel_just_docked"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vessel_needs_to_perform_the_docking_maneuver_again"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vessel_needs_to_wait_in_order_to_dock_properly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wait"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Water_Data_Association"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Water_Info"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Width_of_the_boat_is_32_meters"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wind_Data_Association"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wind_Info"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A_large_boat_(vessel)_is_up_to_300_meters_long_and_35_meters_wide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agent_thinks_that_the_process_is_not_over_yet,_and_the_Perform_Maneuver_activity_will_be_helpful_at_this_moment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agent_thinks_that_the_process_is_not_over_yet,_but_the_Perform_Maneuver_activity_won&apos;t_be_helpful_at_this_moment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Condition:_Communicator_agent_has_no_reason_to_continue_the_Perform_Maneuver_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Condition:_Communicator_agent_has_reasons_to_continue_the_Perform_Maneuver_activity,_and_the_current_conditions_are_decent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Condition:_Communicator_agent_has_reasons_to_continue_the_Perform_Maneuver_activity,_but_proper_conditions_are_needed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Condition:_Executor_agent_believes_docking_process_is_about_to_violate_an_Integrity_Rule,_and_there_is_nothing_else_to_do_about_It"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#There_are_15_large_boats_(vessel)_at_the_pier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vessel&apos;s_Position"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#What_is_the_best_maneuver_type_for_this_situation?"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#BPO::Association"/>
+        <Class IRI="#Relation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action_Contribution"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agent"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atomic_Action"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belief"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communicative_Act"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Complex_Action"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desire"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goal"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Innovation"/>
+        <Class IRI="#Action_Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Innovation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#provided_by"/>
+            <Class IRI="#KIPCO::Innovation_Agent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intention"/>
+        <Class IRI="#KIPCO::Desire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intention"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+            <Class IRI="#KIPCO::Activity_Goal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intention"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#used_intention"/>
+            <Class IRI="#KIPCO::Knowledge_Intensive_Activity"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interaction"/>
+        <Class IRI="#Special_Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mental_Moment"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normative_Description"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerceptionofCommunication"/>
+        <Class IRI="#Action_Contribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerceptionofCommunication"/>
+        <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#communication"/>
+                <Class IRI="#KIPCO::Communication"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#perception"/>
+                <Class IRI="#CO::COM::Perception"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+                <Class IRI="#CO::COM::Message"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_agent"/>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proposition"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relation"/>
+        <Class IRI="#Special_Relator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resource"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocializationduetoInformalExchange"/>
+        <Class IRI="#Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocializationduetoInformalExchange"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#stimulates"/>
+                <Class IRI="#KIPCO::Contingency"/>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#infoexchange"/>
+                <Class IRI="#KIPCO::Informal_Exchange"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#socialization"/>
+                <Class IRI="#KIPCO::Socialization"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Special_Relator"/>
+        <Class IRI="http://purl.org/nemo/gufo#ExtrinsicAspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Activity"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Activity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+            <Class IRI="#KIPCO::Knowledge_Intensive_Process"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Data_Object"/>
+        <Class IRI="#DO::Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Data_Object"/>
+        <Class IRI="#KIPCO::Knowledge_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Data_Object"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contributes_to_create"/>
+            <Class IRI="#KIPCO::Assertion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Flow"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Flow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#associated_with"/>
+            <Class IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#BPO::Association"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Message_Flow"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Message_Flow"/>
+        <Class IRI="#BPO::Flow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Message_Flow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+            <Class IRI="#BPO::Flow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BPO::Message_Flow"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#connects"/>
+            <Class IRI="#BPO::Activity"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRO::Derivation_Foundational_Rule"/>
+        <Class IRI="#BRO::Foundational_Business_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRO::Foundational_Business_Rule"/>
+        <Class IRI="#Normative_Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRO::Foundational_Conclusion"/>
+        <Class IRI="http://purl.org/nemo/gufo#TemporaryRelationshipSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRO::Foundational_Condition"/>
+        <Class IRI="http://purl.org/nemo/gufo#TemporaryRelationshipSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRO::Foundational_Event"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRO::Foundational_Integrity_Rule"/>
+        <Class IRI="#BRO::Foundational_Business_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRO::Foundational_Post-Condition"/>
+        <Class IRI="http://purl.org/nemo/gufo#TemporaryRelationshipSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRO::Reaction_Foundational_Rule"/>
+        <Class IRI="#BRO::Foundational_Business_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BRO::Reaction_Foundational_Rule"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+                <Class IRI="#BRO::Foundational_Event"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+                <Class IRI="#BRO::Foundational_Event"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CO::COM::Communicative_Interaction"/>
+        <Class IRI="#Complex_Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CO::COM::Message"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CO::COM::Perception"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Action_Contribution"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+                <Class IRI="#CO::COM::Communicative_Interaction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#caused_by"/>
+                <Class IRI="#KIPCO::Communication"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CO::COM::Receiver"/>
+        <Class IRI="http://purl.org/nemo/gufo#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CO::COM::Sender"/>
+        <Class IRI="http://purl.org/nemo/gufo#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CO::COOP::Collaborative_Session"/>
+        <Class IRI="#Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Advantage"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Advantage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+            <Class IRI="#DO::Alternative"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Advantage"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#according_to"/>
+            <Class IRI="#DO::Criterion"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Alternative"/>
+        <Class IRI="http://purl.org/nemo/gufo#TemporaryRelationshipSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Alternative"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#considers"/>
+            <Class IRI="#KIPCO::Business_Process_Rules"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Alternative"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#uses"/>
+            <Class IRI="#DO::Resource"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Chosen_Alternative"/>
+        <Class IRI="#DO::Alternative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Chosen_Alternative"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#composes"/>
+            <Class IRI="#DO::Decision"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Criterion"/>
+        <Class IRI="#KIPCO::Business_Process_Rules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Decision"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Decision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#considers"/>
+            <Class IRI="#DO::Restriction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Decision"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+            <Class IRI="#KIPCO::Knowledge_Intensive_Activity"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Decision"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#can_solve"/>
+            <Class IRI="#DO::Question"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Decision"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#pos_state"/>
+            <Class IRI="#DO::Alternative"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Disadvantage"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Disadvantage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+            <Class IRI="#DO::Alternative"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Disadvantage"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#according_to"/>
+            <Class IRI="#DO::Criterion"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Discarded_Alternative"/>
+        <Class IRI="#DO::Alternative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Evidence"/>
+        <Class IRI="http://purl.org/nemo/gufo#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Fact"/>
+        <Class IRI="http://purl.org/nemo/gufo#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Fact"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#generates"/>
+            <Class IRI="#DO::Evidence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Fact"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#instance_of"/>
+            <Class IRI="#KIPCO::Integrity_Rule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Fact"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#influences"/>
+            <Class IRI="#DO::Decision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Feeling"/>
+        <Class IRI="#Mental_Moment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Feeling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#is_motivated_by"/>
+            <Class IRI="#DO::Evidence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Feeling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#is_motivated_by"/>
+            <Class IRI="#KIPCO::Belief"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Feeling"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#belongs_to"/>
+            <Class IRI="#KIPCO::Agent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Question"/>
+        <Class IRI="#KIPCO::Contingency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Question"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#determines"/>
+            <Class IRI="#KIPCO::Experience"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Question"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#determines"/>
+            <Class IRI="#KIPCO::Specialty"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Resource"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Restriction"/>
+        <Class IRI="#KIPCO::Business_Process_Rules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Restriction"/>
+        <Class IRI="#KIPCO::Business_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Risk"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Risk"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+            <Class IRI="#DO::Alternative"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DO::Risk"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#threatens"/>
+            <Class IRI="#DO::Decision"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Activity_Goal"/>
+        <Class IRI="#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Agent"/>
+        <Class IRI="#Physical_agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#performs"/>
+            <Class IRI="#CO::COM::Communicative_Interaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#has_action"/>
+            <Class IRI="#KIPCO::Makes_to_Solve"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Agent"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#undertakes_to_carry_out"/>
+            <Class IRI="#Intention"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Assertion"/>
+        <Class IRI="#Normative_Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Assertion"/>
+        <Class IRI="#KIPCO::Knowledge_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Belief"/>
+        <Class IRI="#Belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Belief"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#becomes"/>
+            <Class IRI="#Intention"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Belief"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#belongs_to"/>
+            <Class IRI="#KIPCO::Agent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Business_Process_Rules"/>
+        <Class IRI="#KIPCO::Assertion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Business_Rule"/>
+        <Class IRI="#BRO::Foundational_Business_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Business_Rule"/>
+        <Class IRI="#KIPCO::Assertion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Communication"/>
+        <Class IRI="#Communicative_Act"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+            <Class IRI="#CO::COM::Communicative_Interaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Contingency"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Derivation_Rule"/>
+        <Class IRI="#BRO::Derivation_Foundational_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Derivation_Rule"/>
+        <Class IRI="#KIPCO::Business_Process_Rules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Derivation_Rule"/>
+        <Class IRI="#KIPCO::Business_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Desire"/>
+        <Class IRI="#Desire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Desire"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#motivates"/>
+            <Class IRI="#KIPCO::Agent"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Experience"/>
+        <Class IRI="#Mental_Moment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Experience"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#influences"/>
+            <Class IRI="#DO::Decision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::External_Agent"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::External_Agent"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#participates"/>
+            <Class IRI="#KIPCO::Socialization"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Impact_Agent"/>
+        <Class IRI="#KIPCO::Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Impact_Agent"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#identifies"/>
+            <Class IRI="#DO::Question"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Informal_Exchange"/>
+        <Class IRI="#Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Informal_Exchange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#stimulates"/>
+            <Class IRI="#KIPCO::Contingency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Informal_Exchange"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#occurs"/>
+            <Class IRI="#KIPCO::Socialization"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Innovation_Agent"/>
+        <Class IRI="#KIPCO::Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Innovation_Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#proposes"/>
+            <Class IRI="#DO::Alternative"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Innovation_Agent"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#KIPCO::Specialty"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Integrity_Rule"/>
+        <Class IRI="#BRO::Foundational_Integrity_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Integrity_Rule"/>
+        <Class IRI="#KIPCO::Business_Process_Rules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Integrity_Rule"/>
+        <Class IRI="#KIPCO::Business_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Activity"/>
+        <Class IRI="#Atomic_Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Activity"/>
+        <Class IRI="#BPO::Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Activity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#may_be_helped_by"/>
+            <Class IRI="#Innovation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Activity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#KIPCO::Activity_Goal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Process"/>
+        <Class IRI="#Complex_Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+            </ObjectInverseOf>
+            <Class IRI="#BPO::Activity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Knowledge_Structure"/>
+        <Class IRI="#Normative_Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Makes_to_Solve"/>
+        <Class IRI="#Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Makes_to_Solve"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#uses_action"/>
+            <Class IRI="#DO::Decision"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Makes_to_Solve"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+            <Class IRI="#DO::Question"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Mental_Image"/>
+        <Class IRI="#Belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Mental_Image"/>
+        <Class IRI="#KIPCO::Knowledge_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Mental_Image"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contributes_to_create"/>
+            <Class IRI="#KIPCO::Assertion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Message_Flow"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Message_Flow"/>
+        <Class IRI="#BPO::Message_Flow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Message_Flow"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#consists_of"/>
+                <Class IRI="#CO::COM::Message"/>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#connects"/>
+                <Class IRI="#KIPCO::Informal_Exchange"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Message_Flow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+            <Class IRI="#BPO::Message_Flow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Process_Goal"/>
+        <Class IRI="#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Reaction_Rule"/>
+        <Class IRI="#BRO::Reaction_Foundational_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Reaction_Rule"/>
+        <Class IRI="#KIPCO::Business_Process_Rules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Reaction_Rule"/>
+        <Class IRI="#KIPCO::Business_Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Socialization"/>
+        <Class IRI="#Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Socialization"/>
+        <Class IRI="#CO::COOP::Collaborative_Session"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Socialization"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#creates"/>
+            <Class IRI="#KIPCO::Mental_Image"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Specialty"/>
+        <Class IRI="#Mental_Moment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KIPCO::Specialty"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#influences"/>
+            <Class IRI="#DO::Decision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BPO::Activity"/>
+        <Class IRI="#KIPCO::Process_Goal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DO::Chosen_Alternative"/>
+        <Class IRI="#DO::Discarded_Alternative"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KIPCO::Impact_Agent"/>
+        <Class IRI="#KIPCO::Innovation_Agent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Process"/>
+        <Class IRI="#KIPCO::Process_Goal"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Integrity_Rule"/>
+        <NamedIndividual IRI="#A_small_boat_is_up_to_100_meters_long_and_15_meters_wide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Event"/>
+        <NamedIndividual IRI="#Agent_found_major_error_in_process"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Event"/>
+        <NamedIndividual IRI="#Agent_thinks_that_the_process_is_over"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Process_Goal"/>
+        <NamedIndividual IRI="#Allow_passage_between_the_ship_and_the_pier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Event"/>
+        <NamedIndividual IRI="#Cancel_maneuver_and_end_process"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DO::Decision"/>
+        <NamedIndividual IRI="#Decide_maneuver_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#MaterialRelationshipType"/>
+        <NamedIndividual IRI="#Dock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Process"/>
+        <NamedIndividual IRI="#Dock_Ship"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Event"/>
+        <NamedIndividual IRI="#End_process"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Activity"/>
+        <NamedIndividual IRI="#Get_data_from_the_pier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Activity"/>
+        <NamedIndividual IRI="#Get_vessel_data"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Activity"/>
+        <NamedIndividual IRI="#Get_vessel_movement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Integrity_Rule"/>
+        <NamedIndividual IRI="#It_is_possible_to_fit_2_small_boats_in_a_big_boat_slot_at_the_pier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Assertion"/>
+        <NamedIndividual IRI="#Length_of_the_boat_is_294_meters"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DO::Disadvantage"/>
+        <NamedIndividual IRI="#Maneuver_is_going_to_take_a_lot_of_time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DO::Advantage"/>
+        <NamedIndividual IRI="#Maneuver_is_going_to_take_less_time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DO::Restriction"/>
+        <NamedIndividual IRI="#Maximum_number_of_large_boats_moored_is_20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DO::Restriction"/>
+        <NamedIndividual IRI="#Maximum_number_of_small_boats_moored_is_25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Post-Condition"/>
+        <NamedIndividual IRI="#No_fundamental_aspect_of_the_process_was_violated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Integrity_Rule"/>
+        <NamedIndividual IRI="#No_private_property_can_be_damaged_during_the_process"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Activity"/>
+        <NamedIndividual IRI="#Obtain_environmental_factors"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Makes_to_Solve"/>
+        <NamedIndividual IRI="#Pay_attention_to_the_context_of_the_process_and_decide_what_is_the_best_maneuver_possible"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Activity"/>
+        <NamedIndividual IRI="#Perform_maneuver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#BPO::Association"/>
+        <NamedIndividual IRI="#Pier_Data_Association"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Data_Object"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DO::Alternative"/>
+        <NamedIndividual IRI="#Port_side"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Integrity_Rule"/>
+        <NamedIndividual IRI="#Proper_weather_conditions_are_needed_in_order_to_dock_properly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Activity"/>
+        <NamedIndividual IRI="#Set_maneuver_type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DO::Alternative"/>
+        <NamedIndividual IRI="#Starboard_side"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Activity"/>
+        <NamedIndividual IRI="#Start_mooring_the_ship"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Event"/>
+        <NamedIndividual IRI="#Start_the_Start_Maneuver_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Event"/>
+        <NamedIndividual IRI="#Start_the_Wait_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Assertion"/>
+        <NamedIndividual IRI="#There_are_25_small_boats_at_the_pier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DO::Risk"/>
+        <NamedIndividual IRI="#Time_mismanagement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#BPO::Association"/>
+        <NamedIndividual IRI="#Vessel_Data_Association"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Data_Object"/>
+        <NamedIndividual IRI="#Vessel_Info"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Assertion"/>
+        <NamedIndividual IRI="#Vessel_Status"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Reaction_Rule"/>
+        <NamedIndividual IRI="#Vessel_is_unable_to_dock_right_now"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Reaction_Rule"/>
+        <NamedIndividual IRI="#Vessel_just_docked"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Reaction_Rule"/>
+        <NamedIndividual IRI="#Vessel_needs_to_perform_the_docking_maneuver_again"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Reaction_Rule"/>
+        <NamedIndividual IRI="#Vessel_needs_to_wait_in_order_to_dock_properly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Activity"/>
+        <NamedIndividual IRI="#Wait"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#BPO::Association"/>
+        <NamedIndividual IRI="#Water_Data_Association"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Data_Object"/>
+        <NamedIndividual IRI="#Water_Info"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Assertion"/>
+        <NamedIndividual IRI="#Width_of_the_boat_is_32_meters"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#BPO::Association"/>
+        <NamedIndividual IRI="#Wind_Data_Association"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BPO::Data_Object"/>
+        <NamedIndividual IRI="#Wind_Info"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Integrity_Rule"/>
+        <NamedIndividual IRI="#A_large_boat_(vessel)_is_up_to_300_meters_long_and_35_meters_wide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Event"/>
+        <NamedIndividual IRI="#Agent_thinks_that_the_process_is_not_over_yet,_and_the_Perform_Maneuver_activity_will_be_helpful_at_this_moment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Event"/>
+        <NamedIndividual IRI="#Agent_thinks_that_the_process_is_not_over_yet,_but_the_Perform_Maneuver_activity_won&apos;t_be_helpful_at_this_moment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Condition"/>
+        <NamedIndividual IRI="#Condition:_Communicator_agent_has_no_reason_to_continue_the_Perform_Maneuver_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Condition"/>
+        <NamedIndividual IRI="#Condition:_Communicator_agent_has_reasons_to_continue_the_Perform_Maneuver_activity,_and_the_current_conditions_are_decent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Condition"/>
+        <NamedIndividual IRI="#Condition:_Communicator_agent_has_reasons_to_continue_the_Perform_Maneuver_activity,_but_proper_conditions_are_needed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BRO::Foundational_Conclusion"/>
+        <NamedIndividual IRI="#Condition:_Executor_agent_believes_docking_process_is_about_to_violate_an_Integrity_Rule,_and_there_is_nothing_else_to_do_about_It"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KIPCO::Assertion"/>
+        <NamedIndividual IRI="#There_are_15_large_boats_(vessel)_at_the_pier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DO::Criterion"/>
+        <NamedIndividual IRI="#Vessel&apos;s_Position"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DO::Question"/>
+        <NamedIndividual IRI="#What_is_the_best_maneuver_type_for_this_situation?"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#has_action"/>
+        <NamedIndividual IRI="#Communicator"/>
+        <NamedIndividual IRI="#Pay_attention_to_the_context_of_the_process_and_decide_what_is_the_best_maneuver_possible"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+        <NamedIndividual IRI="#Decide_maneuver_type"/>
+        <NamedIndividual IRI="#Set_maneuver_type"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#pos_state"/>
+        <NamedIndividual IRI="#Decide_maneuver_type"/>
+        <NamedIndividual IRI="#Port_side"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#pos_state"/>
+        <NamedIndividual IRI="#Decide_maneuver_type"/>
+        <NamedIndividual IRI="#Starboard_side"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#Dock_Ship"/>
+        <NamedIndividual IRI="#Allow_passage_between_the_ship_and_the_pier"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#identifies"/>
+        <NamedIndividual IRI="#Executor_agent"/>
+        <NamedIndividual IRI="#What_is_the_best_maneuver_type_for_this_situation?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+        <NamedIndividual IRI="#Get_data_from_the_pier"/>
+        <NamedIndividual IRI="#Dock_Ship"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+        <NamedIndividual IRI="#Get_vessel_data"/>
+        <NamedIndividual IRI="#Dock_Ship"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+        <NamedIndividual IRI="#Get_vessel_movement"/>
+        <NamedIndividual IRI="#Dock_Ship"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+        <NamedIndividual IRI="#Maneuver_is_going_to_take_a_lot_of_time"/>
+        <NamedIndividual IRI="#Port_side"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#according_to"/>
+        <NamedIndividual IRI="#Maneuver_is_going_to_take_a_lot_of_time"/>
+        <NamedIndividual IRI="#Vessel&apos;s_Position"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+        <NamedIndividual IRI="#Maneuver_is_going_to_take_less_time"/>
+        <NamedIndividual IRI="#Starboard_side"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#according_to"/>
+        <NamedIndividual IRI="#Maneuver_is_going_to_take_less_time"/>
+        <NamedIndividual IRI="#Vessel&apos;s_Position"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+        <NamedIndividual IRI="#No_fundamental_aspect_of_the_process_was_violated"/>
+        <NamedIndividual IRI="#Vessel_is_unable_to_dock_right_now"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+        <NamedIndividual IRI="#No_fundamental_aspect_of_the_process_was_violated"/>
+        <NamedIndividual IRI="#Vessel_just_docked"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+        <NamedIndividual IRI="#No_fundamental_aspect_of_the_process_was_violated"/>
+        <NamedIndividual IRI="#Vessel_needs_to_perform_the_docking_maneuver_again"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+        <NamedIndividual IRI="#No_fundamental_aspect_of_the_process_was_violated"/>
+        <NamedIndividual IRI="#Vessel_needs_to_wait_in_order_to_dock_properly"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelationshipType"/>
+        <NamedIndividual IRI="#No_fundamental_aspect_of_the_process_was_violated"/>
+        <NamedIndividual IRI="#Dock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#influences"/>
+        <NamedIndividual IRI="#No_private_property_can_be_damaged_during_the_process"/>
+        <NamedIndividual IRI="#Decide_maneuver_type"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#threatens"/>
+        <NamedIndividual IRI="#Pay_attention_to_the_context_of_the_process_and_decide_what_is_the_best_maneuver_possible"/>
+        <NamedIndividual IRI="#Decide_maneuver_type"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#uses_action"/>
+        <NamedIndividual IRI="#Pay_attention_to_the_context_of_the_process_and_decide_what_is_the_best_maneuver_possible"/>
+        <NamedIndividual IRI="#Decide_maneuver_type"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+        <NamedIndividual IRI="#Perform_maneuver"/>
+        <NamedIndividual IRI="#Dock_Ship"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#connects"/>
+        <NamedIndividual IRI="#Pier_Data_Association"/>
+        <NamedIndividual IRI="#Get_data_from_the_pier"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#is_connected_with"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <NamedIndividual IRI="#Pier_Data_Association"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <NamedIndividual IRI="#A_small_boat_is_up_to_100_meters_long_and_15_meters_wide"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <NamedIndividual IRI="#It_is_possible_to_fit_2_small_boats_in_a_big_boat_slot_at_the_pier"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <NamedIndividual IRI="#Maximum_number_of_large_boats_moored_is_20"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <NamedIndividual IRI="#Maximum_number_of_small_boats_moored_is_25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <NamedIndividual IRI="#No_private_property_can_be_damaged_during_the_process"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <NamedIndividual IRI="#There_are_25_small_boats_at_the_pier"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <NamedIndividual IRI="#A_large_boat_(vessel)_is_up_to_300_meters_long_and_35_meters_wide"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <NamedIndividual IRI="#There_are_15_large_boats_(vessel)_at_the_pier"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+        <NamedIndividual IRI="#Set_maneuver_type"/>
+        <NamedIndividual IRI="#Dock_Ship"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+        <NamedIndividual IRI="#Start_mooring_the_ship"/>
+        <NamedIndividual IRI="#Dock_Ship"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+        <NamedIndividual IRI="#Time_mismanagement"/>
+        <NamedIndividual IRI="#Maneuver_is_going_to_take_a_lot_of_time"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+        <NamedIndividual IRI="#Time_mismanagement"/>
+        <NamedIndividual IRI="#Maneuver_is_going_to_take_less_time"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#threatens"/>
+        <NamedIndividual IRI="#Time_mismanagement"/>
+        <NamedIndividual IRI="#Decide_maneuver_type"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#connects"/>
+        <NamedIndividual IRI="#Vessel_Data_Association"/>
+        <NamedIndividual IRI="#Get_vessel_data"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#connects"/>
+        <NamedIndividual IRI="#Vessel_Data_Association"/>
+        <NamedIndividual IRI="#Get_vessel_movement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#is_connected_with"/>
+        <NamedIndividual IRI="#Vessel_Info"/>
+        <NamedIndividual IRI="#Vessel_Data_Association"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Vessel_Info"/>
+        <NamedIndividual IRI="#Length_of_the_boat_is_294_meters"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Vessel_Info"/>
+        <NamedIndividual IRI="#Proper_weather_conditions_are_needed_in_order_to_dock_properly"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Vessel_Info"/>
+        <NamedIndividual IRI="#Vessel_Status"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <NamedIndividual IRI="#Vessel_Info"/>
+        <NamedIndividual IRI="#Width_of_the_boat_is_32_meters"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+        <NamedIndividual IRI="#Vessel_is_unable_to_dock_right_now"/>
+        <NamedIndividual IRI="#Cancel_maneuver_and_end_process"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+        <NamedIndividual IRI="#Vessel_is_unable_to_dock_right_now"/>
+        <NamedIndividual IRI="#Agent_found_major_error_in_process"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+        <NamedIndividual IRI="#Vessel_just_docked"/>
+        <NamedIndividual IRI="#End_process"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+        <NamedIndividual IRI="#Vessel_just_docked"/>
+        <NamedIndividual IRI="#Agent_thinks_that_the_process_is_over"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+        <NamedIndividual IRI="#Vessel_needs_to_perform_the_docking_maneuver_again"/>
+        <NamedIndividual IRI="#Start_the_Start_Maneuver_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+        <NamedIndividual IRI="#Vessel_needs_to_perform_the_docking_maneuver_again"/>
+        <NamedIndividual IRI="#Agent_thinks_that_the_process_is_not_over_yet,_and_the_Perform_Maneuver_activity_will_be_helpful_at_this_moment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+        <NamedIndividual IRI="#Vessel_needs_to_wait_in_order_to_dock_properly"/>
+        <NamedIndividual IRI="#Start_the_Wait_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+        <NamedIndividual IRI="#Vessel_needs_to_wait_in_order_to_dock_properly"/>
+        <NamedIndividual IRI="#Agent_thinks_that_the_process_is_not_over_yet,_but_the_Perform_Maneuver_activity_won&apos;t_be_helpful_at_this_moment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+        <NamedIndividual IRI="#Wait"/>
+        <NamedIndividual IRI="#Dock_Ship"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#connects"/>
+        <NamedIndividual IRI="#Water_Data_Association"/>
+        <NamedIndividual IRI="#Obtain_environmental_factors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#is_connected_with"/>
+        <NamedIndividual IRI="#Water_Info"/>
+        <NamedIndividual IRI="#Water_Data_Association"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#connects"/>
+        <NamedIndividual IRI="#Wind_Data_Association"/>
+        <NamedIndividual IRI="#Obtain_environmental_factors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#is_connected_with"/>
+        <NamedIndividual IRI="#Wind_Info"/>
+        <NamedIndividual IRI="#Wind_Data_Association"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+        <NamedIndividual IRI="#Condition:_Communicator_agent_has_no_reason_to_continue_the_Perform_Maneuver_activity"/>
+        <NamedIndividual IRI="#Vessel_just_docked"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+        <NamedIndividual IRI="#Condition:_Communicator_agent_has_reasons_to_continue_the_Perform_Maneuver_activity,_and_the_current_conditions_are_decent"/>
+        <NamedIndividual IRI="#Vessel_needs_to_perform_the_docking_maneuver_again"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+        <NamedIndividual IRI="#Condition:_Communicator_agent_has_reasons_to_continue_the_Perform_Maneuver_activity,_but_proper_conditions_are_needed"/>
+        <NamedIndividual IRI="#Vessel_needs_to_wait_in_order_to_dock_properly"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+        <NamedIndividual IRI="#Condition:_Executor_agent_believes_docking_process_is_about_to_violate_an_Integrity_Rule,_and_there_is_nothing_else_to_do_about_It"/>
+        <NamedIndividual IRI="#Vessel_is_unable_to_dock_right_now"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#can_solve"/>
+        <NamedIndividual IRI="#What_is_the_best_maneuver_type_for_this_situation?"/>
+        <NamedIndividual IRI="#Decide_maneuver_type"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Affirmation"/>
+        <NamedIndividual IRI="#Agent_found_major_error_in_process"/>
+        <Literal>OK!</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DraftEbb"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DraftFlood"/>
+        <NamedIndividual IRI="#Pier_Info"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">35.0</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#is_connected_by"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#is_connected_with"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVcaused_by"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#caused_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVcommunication"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#communication"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVconnects"/>
+        <ObjectProperty IRI="#connects"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVconsists_of"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#consists_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVcreates"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#creates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVinfoexchange"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#infoexchange"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVoccurs"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#occurs"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVparticipates"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#participates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVperception"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#perception"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVperforms"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#performs"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVpropositional_content_of"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVsocialization"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#socialization"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVstimulates"/>
+        <ObjectProperty IRI="#stimulates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVbecomes"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#becomes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVbelongs_to"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#belongs_to"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVcontributes_to_create"/>
+        <ObjectProperty IRI="#contributes_to_create"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVgenerates"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#generates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVhas"/>
+        <ObjectProperty IRI="#has"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVis_motivated_by"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#is_motivated_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVmay_be_helped_by"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#may_be_helped_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVmotivates"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#motivates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVprovided_by"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#provided_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVundertakes_to_carry_out"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#undertakes_to_carry_out"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVused_intention"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#used_intention"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVuses_innovation"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#uses_innovation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#INVuses_intention"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#uses_intention"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#INV_resulting_event"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#INVinstance_of"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#instance_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#INVtrigger_event"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+    </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#propositional_content_of"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#instance_of"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#associated_with"/>
+    </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#instance_of"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#communication"/>
+        <Class IRI="#PerceptionofCommunication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#perception"/>
+        <Class IRI="#PerceptionofCommunication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#socialization"/>
+        <Class IRI="#SocializationduetoInformalExchange"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#associated_with"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#BPO::Association"/>
+            <Class IRI="#Mental_Moment"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#is_connected_with"/>
+        <Class IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#BPO::Association"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#caused_by"/>
+        <Class IRI="#Communicative_Act"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#communication"/>
+        <Class IRI="#KIPCO::Communication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#consists_of"/>
+        <Class IRI="#Proposition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#creates"/>
+        <Class IRI="#Belief"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#infoexchange"/>
+        <Class IRI="#KIPCO::Informal_Exchange"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#participates"/>
+        <Class IRI="#Interaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#performs"/>
+        <Class IRI="#Complex_Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#becomes"/>
+        <Class IRI="#Intention"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#belongs_to"/>
+        <ObjectUnionOf>
+            <Class IRI="#CO::COM::Receiver"/>
+            <Class IRI="#CO::COM::Sender"/>
+            <Class IRI="#KIPCO::Agent"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#generates"/>
+        <Class IRI="http://purl.org/nemo/gufo#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#is_motivated_by"/>
+        <ObjectUnionOf>
+            <Class IRI="http://purl.org/nemo/gufo#Situation"/>
+            <Class IRI="#Belief"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#may_be_helped_by"/>
+        <Class IRI="#Innovation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#motivates"/>
+        <ObjectUnionOf>
+            <Class IRI="#Physical_agent"/>
+            <Class IRI="#CO::COM::Receiver"/>
+            <Class IRI="#CO::COM::Sender"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#provided_by"/>
+        <Class IRI="#KIPCO::Innovation_Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#undertakes_to_carry_out"/>
+        <Class IRI="#Intention"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#used_intention"/>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connects"/>
+        <ObjectUnionOf>
+            <Class IRI="#Action"/>
+            <Class IRI="#Interaction"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contributes_to_create"/>
+        <ObjectUnionOf>
+            <Class IRI="#Goal"/>
+            <Class IRI="#Normative_Description"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <ObjectUnionOf>
+            <Class IRI="#Goal"/>
+            <Class IRI="#Mental_Moment"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stimulates"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#instance_of"/>
+        <Class IRI="#KIPCO::Integrity_Rule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#resulting_event"/>
+        <Class IRI="#BRO::Foundational_Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/bro#trigger_event"/>
+        <Class IRI="#BRO::Foundational_Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#uses"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#uses_action"/>
+        <Class IRI="#KIPCO::Knowledge_Intensive_Activity"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVinfoexchange"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#socialization"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#occurs"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#INVperception"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#communication"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#caused_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#may_be_helped_by"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#provided_by"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#uses_innovation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#undertakes_to_carry_out"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#used_intention"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#uses_intention"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#has_action"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#uses_action"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/3/do#makes_to_solve"/>
+    </SubObjectPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#Enunciado"/>
+        <Class IRI="#BPO::Data_Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DraftAft"/>
+        <Class IRI="#BPO::Data_Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DraftEbb"/>
+        <Class IRI="#BPO::Data_Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DraftFlood"/>
+        <Class IRI="#BPO::Data_Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DraughtForward"/>
+        <Class IRI="#BPO::Data_Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TimeEbb"/>
+        <Class IRI="#BPO::Data_Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TimeFlood"/>
+        <Class IRI="#BPO::Data_Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#VelocityCurrent"/>
+        <Class IRI="#BPO::Data_Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#VelocityWind"/>
+        <Class IRI="#BPO::Data_Object"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#hasAffirmation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/co#Frase_De_Agentes"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#Enunciado"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Affirmation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DraftAft"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DraftEbb"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DraftFlood"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DraughtForward"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TimeEbb"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TimeFlood"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#VelocityCurrent"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#VelocityWind"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/bpo#BPO::Association</IRI>
+        <Literal>Associa uma atividade no seu Data Objetct, resultado gerado na Atividade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/guilherme_braga/ontologies/2021/0/core#undertakes_to_carry_out</IRI>
+        <Literal>&quot;compromete-se a realizar&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#A_small_boat_is_up_to_100_meters_long_and_15_meters_wide</IRI>
+        <Literal>Pier-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent_found_major_error_in_process</IRI>
+        <Literal>New action needs to happen once this happens.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent_thinks_that_the_process_is_over</IRI>
+        <Literal>Action that triggers Reaction Rule.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Allow_passage_between_the_ship_and_the_pier</IRI>
+        <Literal>Main process goal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cancel_maneuver_and_end_process</IRI>
+        <Literal>Outcome of the Reaction Rule.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Decide_maneuver_type</IRI>
+        <Literal>Decision that &quot;bottlenecks&quot; the Knowledge Intensive Activity &quot;Set Maneuver Type&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dock_Ship</IRI>
+        <Literal>Main process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#End_process</IRI>
+        <Literal>Action that ends process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Get_data_from_the_pier</IRI>
+        <Literal>Activity regarding the Pier&apos;s information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Get_vessel_data</IRI>
+        <Literal>Activity regarding Vessel&apos;s information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Goal</IRI>
+        <Literal>Objetivos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Innovation</IRI>
+        <Literal>Proposta por um Agente para auxiliar em determinada atividade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Innovation</IRI>
+        <Literal>https://imgur.com/a/ogKmxwB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Intention</IRI>
+        <Literal>Comprometimento real de um desejo por parte do Agente. Nem todo desejo se realiza, mas o Agente se empenha em realizar uma intenção.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Intention</IRI>
+        <Literal>https://imgur.com/a/1cGUEQC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#It_is_possible_to_fit_2_small_boats_in_a_big_boat_slot_at_the_pier</IRI>
+        <Literal>Pier-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Length_of_the_boat_is_294_meters</IRI>
+        <Literal>Boat-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Maneuver_is_going_to_take_a_lot_of_time</IRI>
+        <Literal>Aspect regarding a decision, given a criteria.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Maneuver_is_going_to_take_less_time</IRI>
+        <Literal>Aspect regarding a decision, given a criteria.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Maximum_number_of_large_boats_moored_is_20</IRI>
+        <Literal>Pier-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Maximum_number_of_small_boats_moored_is_25</IRI>
+        <Literal>Pier-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mental_Moment</IRI>
+        <Literal>Um tipo de modo intencional do Agente. Influenciam decisões.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#No_fundamental_aspect_of_the_process_was_violated</IRI>
+        <Literal>How the enviroment is once the Reaction Rule happened.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#No_private_property_can_be_damaged_during_the_process</IRI>
+        <Literal>Pier-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Normative_Description</IRI>
+        <Literal>Descrição normativa. Afirmações, estruturas de conhecimento e regras de negócio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Obtain_environmental_factors</IRI>
+        <Literal>Activity that defines the enviroment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pay_attention_to_the_context_of_the_process_and_decide_what_is_the_best_maneuver_possible</IRI>
+        <Literal>What agent does regarding decision.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PerceptionofCommunication</IRI>
+        <Literal>Reificação da relação Percepção/Comunicação, conteúdos da mensagem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PerceptionofCommunication</IRI>
+        <Literal>https://imgur.com/a/zk1E3J0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Perform_maneuver</IRI>
+        <Literal>Activity that happens once decisions were made.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pier_Data_Association</IRI>
+        <Literal>Association between Data discored and activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pier_Info</IRI>
+        <Literal>Information gathered when &quot;Get data from the pier&quot; activity happened.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Port_side</IRI>
+        <Literal>Alternative of the decision.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Proper_weather_conditions_are_needed_in_order_to_dock_properly</IRI>
+        <Literal>Boat-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Set_maneuver_type</IRI>
+        <Literal>Knowledge Intensive Activity: requires a decision.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocializationduetoInformalExchange</IRI>
+        <Literal>Reificação de relação Socialização/Troca de Informação Informal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocializationduetoInformalExchange</IRI>
+        <Literal>https://imgur.com/a/6QNhfHT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Special_Relator</IRI>
+        <Literal>Conecta dois ou mais indivíduos concretos. Por exemplo, uma troca de informações que apresentam seu início em uma conversa, e acabam por determinar um outro evento.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Starboard_side</IRI>
+        <Literal>Alternative of the decision.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Start_mooring_the_ship</IRI>
+        <Literal>First acitivy that is part of the process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Start_the_Start_Maneuver_activity</IRI>
+        <Literal>Start the maneuver activity!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Start_the_Wait_activity</IRI>
+        <Literal>Vessel needs to wait for a while.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#There_are_25_small_boats_at_the_pier</IRI>
+        <Literal>Pier-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Time_mismanagement</IRI>
+        <Literal>Risk regarding &quot;Decide Maneuver Type&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vessel_Data_Association</IRI>
+        <Literal>Association between Data discored and activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vessel_Info</IRI>
+        <Literal>Information gathared when &quot;Get Vessel data&quot; activity happened.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vessel_Status</IRI>
+        <Literal>Current state of vessel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vessel_is_unable_to_dock_right_now</IRI>
+        <Literal>What happens when the Vessel is unable to dock? This is a rule with a condition, an action and an outcome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vessel_just_docked</IRI>
+        <Literal>Reaction Rule regarding state of process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vessel_needs_to_perform_the_docking_maneuver_again</IRI>
+        <Literal>Reaction Rule regarding state of process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vessel_needs_to_wait_in_order_to_dock_properly</IRI>
+        <Literal>Reaction Rule regarding state of process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wait</IRI>
+        <Literal>Activity that happens when Vessel is unable to dock, but It is still going to dock eventually.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Water_Data_Association</IRI>
+        <Literal>Associates information and activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Water_Info</IRI>
+        <Literal>Information regarding the water around the Vessel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Width_of_the_boat_is_32_meters</IRI>
+        <Literal>Boat-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wind_Data_Association</IRI>
+        <Literal>Associates information and activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wind_Info</IRI>
+        <Literal>Information regarding the Wind around the Vessel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#A_large_boat_(vessel)_is_up_to_300_meters_long_and_35_meters_wide</IRI>
+        <Literal>Pier-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent_thinks_that_the_process_is_not_over_yet,_and_the_Perform_Maneuver_activity_will_be_helpful_at_this_moment</IRI>
+        <Literal>Action that makes the process finish the &quot;Wait&quot; activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent_thinks_that_the_process_is_not_over_yet,_but_the_Perform_Maneuver_activity_won&apos;t_be_helpful_at_this_moment</IRI>
+        <Literal>Action that triggers &quot;Wait&quot; Reaction Rule.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BPO::Activity</IRI>
+        <Literal>Atividade simples dentro de um Knowledge Intensive Process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BPO::Data_Object</IRI>
+        <Literal>Objeto gerado pela Atividade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BPO::Flow</IRI>
+        <Literal>Controle básico dentro do Knowledge Intensive Process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BPO::Message_Flow</IRI>
+        <Literal>Controle de atividades.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRO::Derivation_Foundational_Rule</IRI>
+        <Literal>Conceito da UFO para modelar regras de negócio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRO::Foundational_Conclusion</IRI>
+        <Literal>Conclusão relacionada a regra de derivação. Se relaciona com uma propriedade e um &quot;endurant&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRO::Foundational_Condition</IRI>
+        <Literal>Uma condição para satisfazer regras de negócio. Se relaciona com uma propriedade e um &quot;endurant&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRO::Foundational_Event</IRI>
+        <Literal>Evento atrelado à reação, modelado pela regra de negócio KIPCO::Reaction Rule.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRO::Foundational_Integrity_Rule</IRI>
+        <Literal>Conceito da UFO para modelar regras de negócio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRO::Foundational_Post-Condition</IRI>
+        <Literal>Resultado do evento que uma regra de negócio modelou. Se relaciona com uma propriedade e um &quot;endurant&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BRO::Reaction_Foundational_Rule</IRI>
+        <Literal>Conceito da UFO para modelar regras de negócio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CO::COM::Communicative_Interaction</IRI>
+        <Literal>Realizado entre agentes, constituindo comunicações e percepções de mensagens.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CO::COM::Message</IRI>
+        <Literal>Início da comunicação, conteúdo a ser compartilhado pelo &quot;Sender&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CO::COM::Perception</IRI>
+        <Literal>Na comunicação, é extraída de uma mensagem pelo agente &quot;Receiver&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CO::COOP::Collaborative_Session</IRI>
+        <Literal>Origem de uma socialização com agentes externos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Condition:_Communicator_agent_has_no_reason_to_continue_the_Perform_Maneuver_activity</IRI>
+        <Literal>Condition that makes the process come to an end.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Advantage</IRI>
+        <Literal>Critérios deverão diferenciar as alternativas, no caso, uma alternativa deve apresentar uma vantagem clara diante de um aspecto. Pode ser que em nem todos os critérios uma alternativa apresente vantagens.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Alternative</IRI>
+        <Literal>Alternativas que são potenciais soluções do problema em questão. Uma ou mais alternativas podem ser escolhidas para atender a uma decisão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Criterion</IRI>
+        <Literal>Critérios são os aspectos que definem vantagens e desvantagens de cada alternativa. São baseadas em regras de negócio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Decision</IRI>
+        <Literal>Decisão a ser tomada, deve responder uma pergunta relativa ao domínio do problema.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Disadvantage</IRI>
+        <Literal>Critérios deverão diferenciar as alternativas, no caso, uma alternativa deve apresentar uma desvantagem clara diante de um aspecto. Pode ser que em nem todos os critérios uma alternativa apresente apenas aspectos negativos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Evidence</IRI>
+        <Literal>Os fatos que influenciam uma decisão acabam por gerar uma evidência, sinalizando que algo existe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Fact</IRI>
+        <Literal>Pode ser uma instância de uma regra de negócio. O fato vem para poder dar base para uma decisão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Fact</IRI>
+        <Literal>Se tudo que a Integrity Rule modela é verdadeiro e constante, dela podemos elaborar Fatos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Feeling</IRI>
+        <Literal>Atitudes mentais acerca de qualquer coisa, gerado nos Agentes para influenciar uma decisão. Não reflete uma verdade absoluta, mas pode ser motivado por uma evidência ou uma crença.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Question</IRI>
+        <Literal>A pergunta que a decisão deve ser capaz de satisfazer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Resource</IRI>
+        <Literal>Recurso utilizado como ponto de partida do objeto gerado na Atividade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Restriction</IRI>
+        <Literal>Restrição imposta em uma decisão, baseada em uma regra de negócio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DO::Risk</IRI>
+        <Literal>O risco vem da escolha de cada alternativa específica, e acaba por impactar na decisão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Activity_Goal</IRI>
+        <Literal>Objetivo pontual de uma atividade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Agent</IRI>
+        <Literal>Participante no processo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Agent</IRI>
+        <Literal>Retém experiências passadas e colabora na execução de atividades do processo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Agent</IRI>
+        <Literal>https://imgur.com/a/7hsHZs3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Assertion</IRI>
+        <Literal>Acaba demonstrando o conteúdo do processo de maneira mais formalizada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Assertion</IRI>
+        <Literal>Uma informação que pode ser extraída a partir do objeto gerado em uma atividade.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Belief</IRI>
+        <Literal>Uma crença que pertence ao Agente, não necessariamente uma verdade. Se um Agente tem uma crença, a mesma pode influenciar uma decisão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Business_Process_Rules</IRI>
+        <Literal>Regras de negócio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Business_Rule</IRI>
+        <Literal>Regras de negócio que modelam como um domínio funciona.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Communication</IRI>
+        <Literal>Conteúdo/propósito de uma mensagem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Contingency</IRI>
+        <Literal>Uma possibilidade futura que levanta questionamentos, elaborada a partir da troca de informações dentro do processo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Derivation_Rule</IRI>
+        <Literal>Regras de derivação são regras que podem demonstrar como um elemento do domínio passou a existir. Por exemplo, a “Regra dos créditos” diz que o aluno só é um formando se completou os créditos necessários até o período letivo anterior ao da formatura. Dessa regra, temos uma conclusão e uma condição. A condição é que o aluno deve mostrar seu histórico escolar para se formar, e a conclusão dessa regra é, por exemplo, que calouros não podem se formar.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Desire</IRI>
+        <Literal>Vontade de um agente em atingir um objetivo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Experience</IRI>
+        <Literal>Agentes apresentam experiências que influenciam nas decisões, por se associarem com as alternativas disponíveis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::External_Agent</IRI>
+        <Literal>Agente que não está participando do processo, mas ocorre interação via socialização.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Impact_Agent</IRI>
+        <Literal>Agente que executa o processo intensivo em conhecimento, identifica problemas a serem solucionados e designa tarefas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Impact_Agent</IRI>
+        <Literal>Agente que levanta perguntas, para as decisões resolverem as perguntas feitas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Informal_Exchange</IRI>
+        <Literal>Troca de informação conduzida no proceso.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Innovation_Agent</IRI>
+        <Literal>Levanta as alternativas possíveis para a resposta para uma decisão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Innovation_Agent</IRI>
+        <Literal>Possui uma especialidade que pode impactar nas decisões do projeto, e por exemplo, pode propor alternativas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Integrity_Rule</IRI>
+        <Literal>Regras de Integridade define regras de domínio que devem ser verdadeiras em todos os pontos da Ontologia. Ou seja, para o exemplo da Formatura, o exemplo usado é a Regra da Quantidade, que diz: &quot;Para existir cerimônia de formatura, pelo menos 5 alunos têm que se formar&quot;. Se a regra é constantemente verdadeira, então fatos podem ser elaborados a partir dela. Essa regra apresenta também uma condição atrelada, a de que o aluno tem um tempo determinado para demonstrar interesse em participar da formatura.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Knowledge_Intensive_Activity</IRI>
+        <Literal>Atividade de maior complexidade dentro de um Knowledge Intensive Process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Knowledge_Intensive_Activity</IRI>
+        <Literal>Atividade intensiva em conhecimento, que caracteriza a existência de um Processo Intensivo em Conhecimento.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Knowledge_Intensive_Process</IRI>
+        <Literal>Conjunto maior de atividades conectadas (ou não, como uma &quot;bag of tasks&quot;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Knowledge_Structure</IRI>
+        <Literal>Conhecimento que ajuda a determinar um Data Object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Knowledge_Structure</IRI>
+        <Literal>Estrutura de conhecimento.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Makes_to_Solve</IRI>
+        <Literal>O que o agente deverá fazer para resolver a decisão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Makes_to_Solve</IRI>
+        <Literal>https://imgur.com/a/q0v0NcM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Mental_Image</IRI>
+        <Literal>Percepção do processo criada na troca de informações com agentes externos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Mental_Image</IRI>
+        <Literal>Vem de uma estrutura de conhecimento que todavia não é muito bem definida. Por exemplo, um agente externo olha para o processo e faz anotações, fazendo um &quot;sumário simples de tópicos&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Message_Flow</IRI>
+        <Literal>Controle que conecta a troca de mensagens dentro de um processo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Process_Goal</IRI>
+        <Literal>Objetivo maior a ser alcançado pelo Knowledge Intensive Process, motivador básico de atividades.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Reaction_Rule</IRI>
+        <Literal>Regras de Reação modelam condições de eventos. O exemplo utilizado é o da “Regra do desconto”, constatando que o aluno deve ter um desconto no pagamento da formatura caso ele não tenha convidados. Atrelado a regra temos:
+
+Uma condição: Como condição, o aluno deve se declarar como não tendo convidados para a Formatura. 
+Uma pós-condição: Como resultado da regra, todo aluno deve ter pagado um preço justo pela realização da Formatura, de acordo com a quantidade de convidados.
+Um evento “trigger”: Para funcionar a regra, o aluno deve pedir o desconto.
+Um evento resultante (ação): Como ação, um organizador da Formatura deve dar um desconto ou um reembolso caso já tenha sido pago um determinado valor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Socialization</IRI>
+        <Literal>Troca de informações informais com um agente externo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KIPCO::Specialty</IRI>
+        <Literal>A especialidade que diferencia um Agente de Inovação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#There_are_15_large_boats_(vessel)_at_the_pier</IRI>
+        <Literal>Pier-related info!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vessel&apos;s_Position</IRI>
+        <Literal>Alternative may be better or worse depending on this criterion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#What_is_the_best_maneuver_type_for_this_situation?</IRI>
+        <Literal>Decision needs to answer this question.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
