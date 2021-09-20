@@ -16,6 +16,8 @@ RDF and OWL the powerful duo, Tara Raafat (vídeo introdutório): https://www.yo
 
 KIPO: https://link.springer.com/article/10.1007/s10270-014-0397-1#citeas
 
+gUFO: https://nemo-ufes.github.io/gufo/
+
 Editor de ontologias usado, Protegé: https://protege.stanford.edu/
 
 Editor de diagramas usado: https://app.diagrams.net/
