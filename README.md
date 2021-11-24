@@ -8,6 +8,8 @@ UnB - PIBIC 2020/2021
 
 # Links Relevantes
 
+Vídeo de apresentação: https://youtu.be/9bDgqs8t63o
+
 Knowledge Engineering with Semantic Web Technology (Playlist): https://youtube.com/playlist?list=PLoOmvuyo5UAcBXlhTti7kzetSsi1PpJGR
 
 Simple Protegé Tutorial: https://youtube.com/playlist?list=PLea0WJq13cnAfCC0azrCyquCN_tPelJN1
